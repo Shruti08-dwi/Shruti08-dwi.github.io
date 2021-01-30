@@ -1,0 +1,305 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=NTR&display=swap");
+@import url("https://pro.fontawesome.com/releases/v5.10.0/css/all.css");
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  /* background-image: url("../images/b1.jpg");
+  background-repeat: no-repeat;
+  /* background-position: center; */
+  /* background-size: cover;   */
+  background-color: #eee;
+  /* font-family: "Muli", sans-serif; */
+  font-family: "NTR", sans-serif;
+  font-weight: 400;
+  min-height: 100%;
+  /* overflow: hidden; */
+  font-size: 16px;
+}
+
+/*----topNav ---*/
+#topNav {
+  background-color: #fff;
+  height: 25px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  font-size: 14px;
+  box-shadow: 1px 0px 4px 0px #ccc;
+  padding: 0 20px;
+}
+
+/*----navbar css starts here -----*/
+#navbar {
+  box-shadow: 0 3px 6px 0 rgb(0 0 0 / 15%);
+  z-index: 90%;
+  /* position: fixed; */
+  height: 55px;
+  /* overflow-y: hidden; */
+  border-bottom: 0.0667rem solid #efefef;
+  background-color: #fff;
+  width: 100%;
+  padding: 0 20px;
+}
+.togglebar{
+  color :#000000;
+  border: none;
+  size:50px;
+  margin-left: 5px;
+  background: transparent;
+ justify-content: center; 
+  align-items: center;
+  font-weight: bolder;
+}
+
+.sidebar{
+  overflow: scroll;
+  position: fixed;
+  width: 20rem;
+  background-color: #ffffff;
+  height: 90%;
+  display:none;
+}
+.sidebar .open{
+transform:translateX(0) ;
+}
+.sidebar-close-button{
+  border-radius: 50%;
+  border: .1rem #000000 solid;
+  width: 3rem;
+  height: 3rem;
+  /* border: 1px solid red; */
+  padding: .5rem;
+  margin-top: 50px;
+  margin-left:40px ;
+  font-size: 2rem;
+  padding-top: 0;
+  cursor: pointer;
+  position: absolute;
+  right: .5rem;
+  top: .5rem;
+  border: none;
+}
+.sidebar ul li{
+  margin-top: 50px;
+}
+.sidebar ul li a{
+  margin-top: 50px;
+  padding: 20px;
+  margin-left: 20px;
+  list-style: none;
+  text-decoration: none;
+  color: #303030;
+  /* border-bottom:1px solid #ccc; */
+} 
+
+#navbar article {
+  display: flex;
+  height: 50px;
+  align-items: center;
+}
+#navbar article .logoBlock {
+  flex-basis: 13%;
+  display: flex;
+  height: 50px;
+  align-items: center;
+}
+#navbar article .leftMenu {
+  flex-basis: 57%;
+}
+#navbar article .rightMenu {
+  flex-basis: 34%;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.leftMenu nav ul {
+  display: flex;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.leftMenu nav ul li a {
+  padding: 8px 25px;
+  color: #303030;
+  text-decoration: none;
+  font-weight: 600;
+  transition: background-color 0.3s;
+  font-size: 16px;
+  text-transform: capitalize;
+  letter-spacing: 1px;
+}
+
+.leftMenu nav ul li {
+  margin-right: 20px;
+}
+
+.logoBlock img {
+  width: 146px;
+  line-height: 70px;
+  display: block;
+}
+
+.logoBlock span:nth-child(1) i {
+  font-size: 20px;
+  line-height: 21px;
+  padding: 8px;
+}
+
+.leftMenu ul li a:hover {
+  background-color: #fed250;
+}
+
+
+
+#card {
+  display: none;
+  width: 200px;
+  height: 200px;
+  border-radius: 2px;
+  background-color: #fff;
+  border: 1px solid #111;
+  position: absolute;
+}
+
+.rightMenu nav ul {
+  display: flex;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.rightMenu nav ul li a {
+  padding: 8px 25px;
+  color: #303030;
+  text-decoration: none;
+  font-weight: 600;
+  transition: background-color 0.3s;
+  font-size: 16px;
+  text-transform: capitalize;
+  letter-spacing: 1px;
+}
+.rightMenu nav ul .loc{
+  display: block;
+  border: 1px solid #fed250;
+  border-radius: 4px;
+}
+/* .rightMenu nav ul .locpic{
+  : 10px;
+} */
+.rightMenu nav ul li {
+  margin-right: 15px;
+  
+}
+.rightMenu li:nth-child(1)  {
+ 
+padding: 5px;
+}
+
+/* .logoBlock img {
+  width: 146px;
+  line-height: 70px;
+  display: block;
+}
+
+.logoBlock span:nth-child(1) i {
+  font-size: 20px;
+  line-height: 21px;
+  padding: 8px;
+} */
+
+.rightMenu ul li a:hover {
+  background-color: #fed250;
+}
+.loc .fa-angle-down{
+  margin-left: 0px;
+}
+
+/* -----------------SliderBlock starts here-------------------------------------- */
+#SliderBlock{
+  /* background-image: url("../images/b1.jpg"); */
+  background-position: top;
+ background-repeat: no-repeat;
+ width: 100%;
+background-size: cover;
+box-sizing: border-box;
+height: 650px;
+/* position: relative; */
+padding:250px 0 250px;
+/* border:2px solid red; */
+background-color: #efefef;
+}
+#SliderBlock .SliderBlockHeading{
+    margin-top: -210px;
+    align-items: center;
+    justify-content: center;
+}
+.date-picker{
+  /* position: relative; */
+  /* border :1px solid red; */
+  background:#ffffff;
+  margin-top: -120px ;
+  width:25%;
+  height:320px;
+  margin-left:150px;
+  /* background-color: grey; */
+  border-radius: 0.7em;
+  padding: 5px;
+}
+
+.date-picker form p:first-child{
+  margin-top: 5%;
+  margin-left: 5%;
+  font: 23px Muli,sans-serif;
+  border:#ccc;
+}
+
+.date-picker form p:nth-child(2){
+
+  margin-left: 5%;
+  font: 15px Muli,sans-serif;
+  margin-top: 5%;
+  border: none;
+  /* border:#ccc; */
+}
+.date-picker form p:nth-child(3){
+  margin-left: 15%;
+  font: 15px Muli,sans-serif;
+  margin-top: 5%;
+  border:#ccc;
+}
+
+.input-date{
+  margin-left: 5%;
+  font: 15px Muli,sans-serif;
+  margin-top: 5%;
+  height:5%;
+  width:40%;
+  border:#ccc;
+}
+
+
+.search-button{
+  display: block;
+  margin-left: 5%;
+  background-color: #fed250;
+  margin-top: 10%;
+  width: 80%;
+  height:2.3em;
+  border-width: 0.1em;
+  border-color: black;
+  margin-bottom: 2em;
+  border: none;
+}
+.search-button a:hover{
+  color: #fed250e7;
+}
+
+
+  
+  
